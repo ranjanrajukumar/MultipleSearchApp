@@ -1,0 +1,36 @@
+﻿
+----Create Database DemoSearch
+----select * from tblProduct
+--CREATE PROCEDURE sp_Search
+--    @ProductName NVARCHAR(255),
+--    @Size NVARCHAR(255),
+--    @Category NVARCHAR(255)
+--AS
+--BEGIN
+--    SELECT *
+--    FROM tblProduct
+--    WHERE
+--        (ISNULL(@ProductName, '') = '' OR ProductName LIKE '%' + @ProductName + '%')
+--        AND (ISNULL(@Size, '') = '' OR Size LIKE '%' + @Size + '%')
+--        AND (ISNULL(@Category, '') = '' OR Category LIKE '%' + @Category + '%');
+--END;
+
+--exec sp_Search
+
+--create table tblProduct (
+--ProductId int identity(1,1),
+--ProductName nvarchar(255),
+--Size nvarchar(255),
+--Price int,
+--MfgDate DateTime,
+--Category nvarchar(255))
+
+
+
+--insert into tblProduct (ProductName,Size,Price,MfgDate,Category)
+--values
+--('Shoes','8','1500',getdate(),'Shoes'),
+--('Shoes','8','2000',getdate(),'Shoes'),
+--('Shoes','7','1520',getdate(),'Shoes'),
+--('Shoes','6','1500',getdate(),'Shoes'),
+--('Shoes','8','1500',getdate(),'Shoes')
